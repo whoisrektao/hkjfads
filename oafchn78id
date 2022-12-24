@@ -1,0 +1,35 @@
+menu = """
+--------------------------------------------------------
+|                                                      | 
+| Bienvenido al conversor de monedas                   |
+|                                                      |
+| [1] Pesos Uruguayos a Dolares                        |
+| [2] Pesos Uruguayos a Pesos Argentinos               |
+| [3] Pesos Uruguayos a Yen                            |
+|                                                      |
+--------------------------------------------------------
+"""
+
+print(menu)
+moneda = int(input("Digita el numero de la moneda que quieras utilizar : "))
+
+if moneda == 1:
+    urud = int(input("Cuantos Pesos Uruguayos tenes? : "))
+    dolar = 0.026
+    total = urud / dolar
+    print('Tienes ${:.2f} Dolares'.format(total))
+elif moneda ==2:
+    urup = float(input("Cuantos Pesos Uruguayos tenes : "))
+    pesoarg = 4.51
+    total1 = urup * pesoarg
+    print('Tienes ${:.2f} Pesos Argentinos'.format(total1))
+elif moneda ==3:
+    urup = float(input("Cuantos Pesos Uruguayos tenes : "))
+    yen = 3.44
+    total2 = urup * yen
+    print('Tienes ${:.2f} Yenes'.format(total2))
+else:
+    print("Elegiste una moneda invalida,fijate si pusiste un numero entre el 1 y el 3")
+    
+    
+    
